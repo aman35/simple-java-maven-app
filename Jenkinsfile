@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.3.3-jdk-8' 
+            image 'maven:3.8.1-adoptopenjdk-11' 
+            args '-v /var/jenkins_home/.m2:/root/.m2' 
         }
     }
     stages {
