@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3.3.3-jdk-8' 
-            args '-u root:sudo -v /root/.m2:/root/.m2'
+            args '-v /var/jenkins_home/.m2:/usr/share/maven/.m2'
         }
     }
     stages {
