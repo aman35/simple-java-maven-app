@@ -3,7 +3,7 @@ pipeline {
        label 'agent'
            }
      tools {
-      maven 'maven339'
+      maven 'maven354'
           }        
     stages {
         stage('Build') { 
